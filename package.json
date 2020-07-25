@@ -1,0 +1,35 @@
+{
+  "name": "portto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "build-dev": "webpack -d --mode development",
+    "build-prod": "webpack -p --mode production",
+    "start": "webpack-dev-server --hot --mode development"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hot-loader": "^4.12.21"
+  },
+  "devDependencies": {
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@hot-loader/react-dom": "^16.13.0+4.12.20",
+    "webpack-dev-server": "^3.11.0",
+    "eslint": "^7.5.0",
+    "eslint-plugin-react": "^7.20.3",
+    "html-webpack-plugin": "^4.3.0",
+    "css-loader": "^3.6.0",
+    "style-loader": "^1.2.1"
+  }
+}
