@@ -1,0 +1,28 @@
+.asset-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.asset {
+  width: calc(50% - 32px);
+  margin-right: 16px;
+  margin-bottom: 32px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.asset img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.loading {
+  text-align: center;
+}
+
+/* Prevent title from overflow */
+@media (max-width: 800px) {
+  .asset h2 {
+    font-size: 16px;
+  }
+}

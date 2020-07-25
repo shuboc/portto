@@ -11,10 +11,12 @@ import {
 import AssetPage from 'components/AssetPage';
 import HomePage from 'components/HomePage';
 
+import 'styles/global.css';
+
 const App = () => {
   return (
     <Router>
-      <div>
+      <div className="container">
         <nav>
           <ul>
             <li>
@@ -24,7 +26,7 @@ const App = () => {
         </nav>
 
         <Switch>
-          <Route path="/:assetId">
+          <Route path="/:contractAddress/:tokenId">
             <AssetPage />
           </Route>
           <Route path="/">

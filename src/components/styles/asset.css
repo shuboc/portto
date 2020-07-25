@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container img {
+  width: 100%;
+}
+
+.permalink {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 32px;
+  background-color: crimson;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  max-width: 90%;
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
