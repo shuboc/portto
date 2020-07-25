@@ -30,7 +30,12 @@ npm run build-dev
 
 ## Running
 
-Open the file `dist/index.html` in your browser
+```sh
+npm i -g http-server
+http-server dist
+```
+
+Site will be available on http://127.0.0.1:8080
 
 ## Credits
 
