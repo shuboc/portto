@@ -41,7 +41,8 @@ const config = {
     ],
     alias: {
       'react-dom': '@hot-loader/react-dom'
-    }
+    },
+    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
   },
   devServer: {
     contentBase: './dist',
