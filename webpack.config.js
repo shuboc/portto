@@ -8,6 +8,7 @@ const config = {
     './src/index.js'
   ],
   output: {
+    publicPath: '/',
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
@@ -43,12 +44,14 @@ const config = {
     }
   },
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
+    historyApiFallback: {
+      index: '/'
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'index.html'
     })
   ]
 };
